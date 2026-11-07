@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Pomodoro Timer",
+    "description": "A 25/5 pomodoro timer below the composer with start, pause, reset and automatic phase cycling."
+  }
+}
