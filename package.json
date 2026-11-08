@@ -1,9 +1,32 @@
 {
-  "name": "@local/dsh-pomodoro",
+  "name": "dsh-plugin-pomodoro",
   "version": "1.0.0",
-  "private": true,
+  "description": "Pomodoro timer widget in the DeepSeek Harness Web UI composer dock (25/5/15 with auto phase cycling, chime, zh/en).",
+  "license": "MIT",
+  "author": {
+    "name": "tomhan00",
+    "url": "https://github.com/tomhan00"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomhan00/dsh-pomodoro.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tomhan00/dsh-pomodoro/issues"
+  },
+  "homepage": "https://github.com/tomhan00/dsh-pomodoro#readme",
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "dsh",
+    "pomodoro",
+    "timer",
+    "productivity"
+  ],
   "type": "module",
-  "description": "Pomodoro timer widget in the Harness Web UI composer dock.",
+  "engines": {
+    "dsh": ">=0.2.1-rc.5"
+  },
   "exports": {
     ".": "./index.js",
     "./client": "./client.js",

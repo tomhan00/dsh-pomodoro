@@ -1,4 +1,4 @@
-# dsh-pomodoro
+# dsh-plugin-pomodoro
 
 A Pomodoro timer widget for the DeepSeek Harness Web UI. It renders a
 25 / 5 / 15-minute pomodoro timer in the conversation composer dock —
@@ -9,18 +9,30 @@ break every 4th focus), a WebAudio chime at each phase boundary, and
 `localStorage` persistence so the timer survives a page reload.
 Ships `zh` / `en` locale.
 
-## Install (as a local bundle)
+## Install
 
-From the harness profile, link and enable the bundle by its directory:
+### From npm (recommended)
+
+Install the published package into your harness profile with the plugin
+manager (npm name: [`dsh-plugin-pomodoro`](https://www.npmjs.com/package/dsh-plugin-pomodoro)):
 
 ```bash
-dsh plugin --profile web install "/path/to/dsh-pomodoro"
+dsh plugin --profile web install dsh-plugin-pomodoro
 ```
 
-Or, via the agent's `plugin_manager` tool:
+Or from an agent session with the `plugin_manager` tool:
 
 ```json
-plugin_manager install_bundle target=/path/to/dsh-pomodoro
+plugin_manager install_bundle target="dsh-plugin-pomodoro"
+```
+
+### From a local checkout
+
+Link and enable the bundle by its directory:
+
+```bash
+git clone https://github.com/tomhan00/dsh-pomodoro.git
+dsh plugin --profile web install ./dsh-pomodoro
 ```
 
 Then reload the Web GUI (http://127.0.0.1:3080) and open a
