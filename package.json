@@ -1,6 +1,6 @@
 {
   "name": "dsh-plugin-pomodoro",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Pomodoro timer widget in the DeepSeek Harness Web UI composer dock (25/5/15 with auto phase cycling, chime, zh/en).",
   "license": "MIT",
   "author": {
